@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarifas — El Mollar te guía</title>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@600;700;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#123832;
+    --forest-deep:#0B2925;
+    --teal:#1F9E8C;
+    --teal-light:#6FE0C9;
+    --ink:#16302B;
+    --ink-soft:#3E5A54;
+    --clay:#B0703F;
+    --line:rgba(18,56,50,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Manrope', sans-serif;
+    background:#F4F1EA;
+    color:var(--ink);
+    padding:20px 16px 40px;
+  }
+  h1{
+    font-family:'Petrona', serif;
+    text-align:center;
+    color:var(--forest);
+    font-size:24px;
+    margin:6px 0 2px;
+  }
+  .subtitle{
+    text-align:center;
+    font-size:14px;
+    color:var(--ink-soft);
+    margin:0 0 22px;
+  }
+  .plans{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    max-width:420px;
+    margin:0 auto;
+  }
+  .plan-card{
+    background:#fff;
+    border-radius:16px;
+    padding:18px 16px;
+    box-shadow:0 8px 16px -6px rgba(18,56,50,0.18);
+    border:1px solid var(--line);
+    position:relative;
+  }
+  .plan-card.featured{
+    border:2px solid var(--teal);
+  }
+  .plan-badge{
+    position:absolute;
+    top:-10px; right:16px;
+    background:var(--teal);
+    color:#fff;
+    font-size:11px;
+    font-weight:700;
+    padding:3px 10px;
+    border-radius:999px;
+  }
+  .plan-name{
+    margin:0 0 2px;
+    font-size:17px;
+    font-weight:800;
+    color:var(--forest);
+  }
+  .plan-price{
+    margin:0 0 10px;
+    font-size:22px;
+    font-weight:700;
+    color:var(--clay);
+  }
+  .plan-price span{
+    font-size:12px;
+    font-weight:500;
+    color:var(--ink-soft);
+  }
+  .plan-card ul{
+    margin:0 0 12px;
+    padding-left:18px;
+    font-size:13.5px;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  .mini-cta{
+    display:block;
+    text-align:center;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:13.5px;
+    padding:10px;
+    border-radius:10px;
+  }
+  footer{
+    text-align:center;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-top:24px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Tarifas para auspiciantes</h1>
+  <p class="subtitle">Sumate a "El Mollar te guía" con el plan que más te sirva</p>
+
+  <div class="plans">
+    <div class="plan-card">
+      <h3 class="plan-name">Inicial</h3>
+      <p class="plan-price">$8.000<span> /mes</span></p>
+      <ul>
+        <li>Aparecés en la categoría que corresponda a tu negocio</li>
+        <li>Nombre, datos de contacto y descripción breve</li>
+      </ul>
+      <a href="https://wa.me/5493813697187?text=Hola!%20Quiero%20sumarme%20a%20El%20Mollar%20te%20gu%C3%ADa%20con%20el%20plan%20Inicial%20(%248.000%2Fmes)." target="_blank" class="mini-cta" style="background:#4C6FB0">💬 Quiero este plan</a>
+    </div>
+    <div class="plan-card featured">
+      <span class="plan-badge">Más elegido</span>
+      <h3 class="plan-name">Destacada <span title="Insignia de mayor visibilidad">⭐</span></h3>
+      <p class="plan-price">$12.000<span> /mes</span></p>
+      <ul>
+        <li>Todo lo del plan Inicial</li>
+        <li>Aparecés arriba en tu categoría</li>
+        <li>Espacio para fotos de tu negocio</li>
+        <li>Incluye insignia ⭐ dorada de mayor visibilidad</li>
+      </ul>
+      <a href="https://wa.me/5493813697187?text=Hola!%20Quiero%20sumarme%20a%20El%20Mollar%20te%20gu%C3%ADa%20con%20el%20plan%20Destacada%20(%2412.000%2Fmes)." target="_blank" class="mini-cta" style="background:#1F9E8C">💬 Quiero este plan</a>
+    </div>
+    <div class="plan-card">
+      <h3 class="plan-name">Premium Auspiciante <span title="Insignia de mayor visibilidad">👑</span></h3>
+      <p class="plan-price">$15.000<span> /mes</span></p>
+      <ul>
+        <li>Todo lo del plan Destacada</li>
+        <li>Tu logo en la sección "Auspician esta guía" (inicio)</li>
+        <li>Prioridad para futuras novedades de la guía</li>
+        <li>Incluye insignia 👑 dorada de mayor visibilidad</li>
+      </ul>
+      <a href="https://wa.me/5493813697187?text=Hola!%20Quiero%20sumarme%20a%20El%20Mollar%20te%20gu%C3%ADa%20con%20el%20plan%20Premium%20Auspiciante%20(%2415.000%2Fmes)." target="_blank" class="mini-cta" style="background:#B0703F">💬 Quiero este plan</a>
+    </div>
+  </div>
+
+  <footer>El Mollar, Tucumán · 📞 381 369 7187</footer>
+
+</body>
+</html>
